@@ -1,8 +1,11 @@
 import '@/styles/global.css';
 
+import classNames from 'classnames';
 import type { Metadata } from 'next';
 
-import { inter, poppins } from '@/styles/Fonts';
+import { inter, poppins } from '@/next.fonts';
+
+const fontClasses = classNames(inter.variable, poppins.variable);
 
 export const metadata: Metadata = {
   title: 'hakanokay.dev',
@@ -37,10 +40,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} ${poppins.variable}`}>
-        {children}
-      </body>
+    <html lang="en" className={fontClasses}>
+      <body>{children}</body>
     </html>
   );
 }

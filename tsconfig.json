@@ -55,6 +55,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/libs/Env.ts"
+    "src/libs/env.ts"
   ]
 }

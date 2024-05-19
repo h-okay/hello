@@ -1,6 +1,6 @@
 import pino from 'pino';
 
-import { Env } from './Env';
+import { Env } from '@/libs/env';
 
 let options = {};
 
